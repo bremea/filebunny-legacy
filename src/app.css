@@ -3,17 +3,34 @@
 @tailwind utilities;
 
 @font-face {
-    font-family: 'Didact Gothic';
-    font-style: normal;
-    font-weight: 400;
-    src: url('/fonts/Didact_Gothic/DidactGothic-Regular.ttf');
+	font-family: 'Didact Gothic';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/Didact_Gothic/DidactGothic-Regular.ttf');
 }
 
 * {
 	font-family: 'Didact Gothic', 'Roboto', arial, sans-serif;
-	@apply text-silver;
+	@apply text-white;
 }
 
 body {
-	@apply m-0 bg-outer-space w-full h-full;
+	@apply m-0 bg-eerie-black w-full h-full;
+}
+
+input {
+	@apply focus:ring-0 focus:outline-0 focus-visible:ring-0 focus-visible:outline-transparent !important;
+}
+
+*:focus {
+    outline: none;
+}
+
+@layer base {
+	h1 {
+		@apply text-4xl font-bold;
+	}
+	h2 {
+		@apply text-xl;
+	}
 }
