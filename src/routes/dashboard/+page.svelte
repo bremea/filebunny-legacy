@@ -2,4 +2,4 @@
 	import { prefs } from '$lib/commands/userdata';
 </script>
 
-<p>{$prefs.name}</p>
+<h2 class="font-bold">Hi, {$prefs.name}</h2>
