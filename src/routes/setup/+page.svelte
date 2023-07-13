@@ -1,5 +1,6 @@
 <script>
 	import { goto } from '$app/navigation';
+	import { newSession } from '$lib/commands/session';
 	import { writeDataFile } from '$lib/commands/userdata';
 	import Button from '$lib/components/input/button.svelte';
 	import Textinput from '$lib/components/input/textinput.svelte';
@@ -7,8 +8,9 @@
 	let name = '';
 
 	async function setName() {
-		console.log(name);
-		await writeDataFile({ name: name });
+		const sessionData = await newSession();
+
+		await writeDataFile({ name: name, session: sessionData });
 		goto('/');
 	}
 </script>

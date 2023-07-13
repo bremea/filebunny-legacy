@@ -2,4 +2,5 @@
 	import { prefs } from '$lib/commands/userdata';
 </script>
 
-<h2 class="font-bold">Hi, {$prefs.name}</h2>
+<h1>Hi, {$prefs.name}</h1>
+<p>You have no active upload links.</p>

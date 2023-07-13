@@ -18,6 +18,10 @@
 			},
 			"path": {
 				"all": true
+			},
+			"http": {
+				"request": true,
+				"scope": ["http://localhost:3000/*"]
 			}
 		},
 		"bundle": {

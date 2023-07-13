@@ -1,7 +1,6 @@
 <script>
 	import { prefs } from '$lib/commands/userdata';
 	import { goto } from '$app/navigation';
-	import { DownloadCloud, FileDown, Link, Power, Wrench } from 'lucide-svelte';
 	import Navitem from '$lib/components/nav/navitem.svelte';
 	import Powerbutton from '$lib/components/nav/powerbutton.svelte';
 
