@@ -8,7 +8,7 @@
 		const exists = await dataFileExists();
 		if (exists) {
 			await readDataFile();
-			goto('/dashboard');
+			goto('/dashboard/links');
 		} else {
 			goto('/setup');
 		}

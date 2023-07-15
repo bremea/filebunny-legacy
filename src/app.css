@@ -3,14 +3,35 @@
 @tailwind utilities;
 
 @font-face {
-	font-family: 'Didact Gothic';
+	font-family: 'Mulish';
 	font-style: normal;
-	font-weight: 400;
-	src: url('/fonts/Didact_Gothic/DidactGothic-Regular.ttf');
+	font-weight: normal;
+	src: url('/fonts/Mulish/static/Mulish-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Mulish';
+	font-style: italic;
+	font-weight: normal;
+	src: url('/fonts/Mulish/static/Mulish-Italic.ttf');
+}
+
+@font-face {
+	font-family: 'Mulish';
+	font-style: normal;
+	font-weight: bold;
+	src: url('/fonts/Mulish/static/Mulish-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'Mulish';
+	font-style: italic;
+	font-weight: bold;
+	src: url('/fonts/Mulish/static/Mulish-BoldItalic.ttf');
 }
 
 * {
-	font-family: 'Didact Gothic', 'Roboto', arial, sans-serif;
+	font-family: 'Mulish', 'Roboto', arial, sans-serif;
 	@apply text-white;
 }
 
@@ -32,6 +53,12 @@ input {
 	}
 	h2 {
 		@apply text-xl;
+	}
+	th, label {
+		@apply font-bold uppercase opacity-75 select-none cursor-default text-sm;
+	}
+	th {
+		@apply text-left border-b-2 border-opacity-25 border-white;
 	}
 }
 
