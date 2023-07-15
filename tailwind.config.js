@@ -9,7 +9,7 @@ export default {
 				'jet': '#323434',
 				aquamarine: '#B5FFE9',
 				'ruddy-blue': '#71A9F7',
-				'ultra-violet': '#6B5CA5',
+				'ultra-violet': '#F899FF',
 				'bright-pink': '#E76D83'
 			}
 		}

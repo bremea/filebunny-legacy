@@ -294,7 +294,7 @@
     svelte-hmr "^0.15.2"
     vitefu "^0.2.4"
 
-"@tauri-apps/api@^1.4.0":
+"@tauri-apps/api@1.4.0", "@tauri-apps/api@^1.4.0":
   version "1.4.0"
   resolved "https://registry.yarnpkg.com/@tauri-apps/api/-/api-1.4.0.tgz#b4013ca3d17b853f7df29fe14079ebb4d52dbffa"
   integrity sha512-Jd6HPoTM1PZSFIzq7FB8VmMu3qSSyo/3lSwLpoapW+lQ41CL5Dow2KryLg+gyazA/58DRWI9vu/XpEeHK4uMdw==
@@ -1860,6 +1860,12 @@ tailwindcss@^3.3.2:
     postcss-value-parser "^4.2.0"
     resolve "^1.22.2"
     sucrase "^3.32.0"
+
+"tauri-plugin-websocket-api@https://github.com/tauri-apps/tauri-plugin-websocket#v1":
+  version "0.0.0"
+  resolved "https://github.com/tauri-apps/tauri-plugin-websocket#81f3e26114fb20d2952212ed98c8b63ab18dc52c"
+  dependencies:
+    "@tauri-apps/api" "1.4.0"
 
 text-table@^0.2.0:
   version "0.2.0"
